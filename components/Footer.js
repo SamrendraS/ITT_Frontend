@@ -1,11 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="px-6 py-2 bg-gray-800 text-gray-100">
+    <footer className="bottom-0 px-6 py-2 bg-gray-800 text-gray-100">
       <div className="flex flex-col justify-between items-center container mx-auto md:flex-row">
-        <a href="#" className="text-2xl font-bold">
-          Brand
-        </a>
-        <p className="mt-2 md:mt-0">All rights reserved 2020.</p>
         <div className="flex -mx-2 mt-4 mb-2 md:mt-0 md:mb-0">
           <a href="#" className="mx-2 text-gray-100 hover:text-gray-400">
             <svg viewBox="0 0 512 512" className="h-4 w-4 fill-current">

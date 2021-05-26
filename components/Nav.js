@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Nav() {
@@ -8,13 +9,11 @@ export default function Nav() {
   };
 
   return (
-    <nav className="bg-white px-6 py-4 shadow z-50">
+    <nav className="bg-purple-50 px-6 py-4 shadow z-50">
       <div className="flex flex-col container mx-auto md:flex-row md:items-center md:justify-between">
         <div className="flex justify-between items-center">
-          <div>
-            <a href="#" className="text-gray-800 text-xl font-bold md:text-2xl">
-              Blogger
-            </a>
+          <div className="text-gray-800 text-xl font-bold md:text-2xl">
+            <Link href="/">Blogger</Link>
           </div>
           <div>
             <button
@@ -35,12 +34,12 @@ export default function Nav() {
         >
           <div className="lg:inline-flex md:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             {" "}
-            <a
-              href="#"
-              className="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0"
+            <Link
+              href="/new"
+              className="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0 h"
             >
-              Blog
-            </a>
+              Create Post
+            </Link>
             <a
               href="#"
               className="my-1 text-gray-800 hover:text-blue-500 md:mx-4 md:my-0"
