@@ -1,7 +1,6 @@
 import Post from "./Post";
 
 const PostList = ({ posts }) => {
-  console.log(posts);
   return (
     <div>
       {posts.map((element) => (
@@ -11,7 +10,7 @@ const PostList = ({ posts }) => {
             author={element.name}
             title={element.title}
             subtitle={element.subtitle}
-            body={element.body}
+            body={element.body.substring(0, 200) + "..."}
             createdAt={element.createdAt}
             updatedAt={element.updatedAt}
           />

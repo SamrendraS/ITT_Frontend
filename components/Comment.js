@@ -1,7 +1,7 @@
 export default function Comment({ body }) {
   return (
-    <div className="my-6 mx-8 max-w-4xl px-10 py-6 bg-white rounded-lg shadow">
-      <p className="mt-4 text-gray-600">{body}</p>
+    <div className="m-3 max-w-4xl p-3 rounded-lg shadow-md">
+      <p className="text-gray-200">{body}</p>
     </div>
   );
 }
